@@ -1,0 +1,98 @@
+@media (max-width: 800px){
+    #dop-info-title {
+        font-size: 5vw;
+        text-align: center;
+    }
+    .dop-info-link{
+        padding: 0 5rem 0 0;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    #dop-info-container{
+        padding: 4vw 4vw 4vw 4vw;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 801px){
+    #dop-info-title {
+        font-size: 3vw;
+        margin-right: 5vw;
+        padding: 4.5rem 5vw 0 0;
+        width: 40%;
+    }
+    .dop-info-link{
+        padding: 0 4rem 0 0;
+        font-size: 1.4vw;
+        line-height: 2rem;
+    }
+    #dop-info-container{
+        padding: 15vw 6vw 4vw 0;
+        flex-wrap: nowrap;
+    }
+}
+
+#dop-info-container{
+    display: flex;
+    justify-content: center;
+}
+#dop-info-title{
+    color: #ffe4c4;
+    font-family: Vintii-2;
+    text-align: center;
+}
+#dop-info{
+    margin-top: 2.5rem;
+}
+#dop-info-ul{
+    list-style: none;
+    color: #ffe4c4;
+}
+
+.dop-info-link{
+    display: flex;
+    --shift-distance: 0.25rem;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffe4c4;
+    position: relative;
+    margin-bottom: 1.5rem;
+    transform: translateX(0);
+    z-index: 1;
+    transition: color .15s ease-in-out,transform .3s ease;
+
+}
+.dop-info-link:before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: calc(100% - 2rem);
+    border-radius: 1rem;
+    height: 2rem;
+    z-index: -1;
+    background-image: url("white-arrow.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 0.4375rem);
+    background-position-y: calc(100% - 0.4375rem);
+    background-size: 1.125rem;
+    background-color: #ec9b50;
+    transition: left .3s cubic-bezier(.34,1.2,.64,1),right .3s ease,background-position .3s ease;
+
+}
+.dop-info-link:after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -0.825rem;
+    border-bottom: 0.0625rem solid #fce1c5;
+    padding-bottom: 0;
+}
+.dop-info-link:hover{
+    transform: translateX(var(--shift-distance));
+    color: #020527;
+}
+.dop-info-link:hover:before{
+    height: 100%;
+    left: calc(var(--shift-distance)*-4);
+}

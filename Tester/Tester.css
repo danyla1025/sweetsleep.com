@@ -1,0 +1,325 @@
+@font-face {
+    font-family: Vintii;
+    src: url("/Content/Figtree/Figtree-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Vintii-2;
+    src: url("/Content/FredokaOne-Regular.ttf");
+}
+button:focus{
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+
+@media (min-width: 5px) {
+    .login {
+        display: none;
+    }
+    .singin {
+        display: none;
+    }
+    .top-menu-buttons {
+        display: none;
+    }
+
+}
+@media (min-width: 950px) {
+    .singin {
+        display: block;
+    }
+}
+@media (min-width: 830px) {
+    .login {
+        display: block;
+    }
+}
+@media (min-width: 700px) {
+    .top-menu-buttons {
+        display: block;
+    }
+}
+
+
+body{
+    background-color: #020527;
+    width: 100%;
+    height: 100%;
+    font-family: Vintii;
+}
+#top-menu-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+#first-page{
+    margin: 30px;
+}
+#top-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe4c4;
+    padding: 5px 30px 5px 30px;
+}
+#left-top-menu{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    width: 50%;
+}
+#g-lab-logo{
+    display: flex;
+    width: 15%;
+    padding: 10px 0;
+}
+
+#logo{
+    width: max(14%, 80px);
+}
+#right-top-menu{
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+.ul-right-top-menu{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+.top-menu-buttons{
+    background: none;
+    border: 0;
+    font-family: Vintii-2;
+    font-size: 1.1vw;
+    color: #020527;
+}
+.w-full{
+    background-color: #020427;
+}
+.rounded75 {
+    border-radius: 0.75rem;
+}
+.text-indigo-333{
+    color: #ffe4c4;
+}
+
+#intro{
+    text-align: center;
+    padding-top: 140px;
+    color: #ffe4c4;
+}
+#intro p{
+    padding-top: 5px;
+    font-size: 1vw;
+    opacity: 0.80;
+    margin-top: 2vw;
+}
+#intro h1{
+    font-size: 5vw;
+    font-family: Vintii-2;
+    margin-bottom: 1.5vw;
+}
+#intro h3{
+    opacity: 0.80;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+#intro-p-a{
+    text-decoration: none;
+    color: #ff873b;
+}
+/* SECOND PAGE */
+#product-img{
+    position: relative;
+    width: 60%;
+    top: -4vw;
+}
+#product-img-sleep{
+    z-index: 9;
+}
+
+.product-card{
+    border-radius: 6vw;
+    border-style: solid;
+    height: 35vw;
+    display: flex;
+    color: #020527;
+    align-items: center;
+    background-color: #ffe4c4;
+    border-color: #020427;
+    box-shadow: 0px 65vw 20vw 75vw #ffe4c4;
+}
+
+#product-img-sleep{
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 10px;
+}
+#root{
+    position: relative;
+    width: 100%;
+}
+#second-page{
+    padding: 35rem 10vw 20vw 10vw;
+}
+#product-text{
+    color: #020527;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+#product-text h1{
+    font-size: 3vw;
+    margin-bottom: 1.2vw;
+    font-family: Vintii;
+}
+.product-text-size{
+    font-size: 1vw;
+}
+.product-text-size-top{
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+    opacity: 0.7;
+}
+#product-e-comm-icons{
+    margin-bottom: 1vw;
+    display: flex;
+}
+#product-e-comm-icons img{
+    width: 5.8vw;
+    padding: 0 2vw 0 0;
+}
+#product-price{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.discount-price{
+    font-family: Vintii;
+    padding: 0 0.5vw 0 1vw;
+    font-size: 4.5vw;
+    color: #050728;
+}
+.price{
+    font-family: Vintii;
+    opacity: 0.5;
+    text-decoration: line-through;
+    font-size: 1.5vw;
+
+}
+#discount{
+    position: relative;
+    padding-bottom: 3.5vw;
+}
+#discount img{
+    width: 2.5vw;
+    position: absolute;
+    z-index: 100;
+    top: 0.5vw;
+    left: 2.1vw;
+}
+
+#product-text-p-testing{
+    opacity: 0.8;
+    font-size: 0.8vw;
+}
+#product-text-button{
+    background-color: #ff873b;
+    font-family: Vintii;
+    border: 1px;
+    color: #ffe4c4;
+    border-style: solid;
+    border-color: #020427;
+    border-radius: 1.5vw;
+    font-size: 2vw;
+    margin-top: 2vw;
+    padding: 1vw 0vw 1vw 0vw;
+    box-shadow: #020427 0vw 0.6vw 0vw 0.01vw;
+}
+.product-card-shadow{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 6vw;
+    border: 1px;
+    border-style: solid;
+    padding: 1vw 5vw 1vw 5vw;
+    box-shadow: 0.5vw 0.5vw 0vw 0.1vw black;
+    align-items: flex-start;
+}
+#product-text-ul li{
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.product-card-title{
+    margin-top: 10vw;
+    font-family: Vintii-2 ;
+    margin-bottom: 0vw;
+    color: #040728;
+    font-size: 4vw;
+    text-align: center;
+}
+.product-card-title2{
+    margin-top: 10vw;
+    margin-bottom: 0vw;
+    color: #040728;
+    font-size: 4vw;
+    text-align: center;
+}
+.learn-more-container{
+    display: flex;
+    color: #e8d1b6;
+}
+.learn-more-img{
+    width: 100%;
+    background-color: #e8d1b6;
+}
+.learn-more-text{
+    width: 100%;
+    padding: 1vw 5vw;
+
+}
+.learn-more-text h1{
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+.learn-more-text p{
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+}
+.learn-more-text ul{
+    padding-left: 1vw;
+    margin-bottom: 1vw;
+
+}
+.learn-more-text li{
+    font-size: 1.2vw;
+    list-style: disc;
+    margin-bottom: 0.2vw;
+}
+.centralize-img img{
+    width: 90%;
+    margin-top: 3vw;
+}
+
+#third-page {
+    display: flex;
+}
+
+

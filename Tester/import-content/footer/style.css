@@ -1,0 +1,57 @@
+#footer-page{
+    display: flex;
+    padding: 4vw;
+    flex-wrap: wrap;
+    border-radius: 3rem;
+    gap: 4rem;
+    box-shadow: 0 20rem 0 0 #f7a151;
+    justify-content: center;
+}
+.footer-container a{
+    cursor: pointer;
+}
+.footer-li-learn{
+    padding-top: 4rem;
+}
+.footer-li{
+    padding-top: 2vw;
+    text-decoration: underline; !important;
+}
+.footer-container h2{
+    padding-top: 2rem;
+}
+.footer-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 2vw;
+    flex-direction: column;
+
+}
+.g-lab-logo{
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+}
+.footer-container h2{
+    font-size: 1.5rem;
+}
+.hr-footer-vertical{
+
+    border: 0;
+    display: block;
+    height: 0.0625rem ;
+    padding: 0;
+    background-color: #3c3c3a;
+    width: 100%;
+}
+.footer-privacy-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.footer-privacy-container a{
+    text-decoration: none;
+    cursor: pointer;
+}
